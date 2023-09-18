@@ -1,0 +1,162 @@
+
+
+.backgroundStyle {
+    background: url("https://drive.google.com/uc?export=view&id=1_uX5QgXYKt_lkU9xHRKcpe8zmKOzIbrk");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+
+.blocoEsquerdo {
+    margin-top: 300px;
+    margin-left: 200px;
+    width: 600px;
+    background: transparent;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    color: black;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 30px 40px;
+    height: 500px;
+
+}
+
+.blocoDireito {
+    margin-top: 300px;
+    margin-right: 200px;
+    width: 600px;
+    display: flex;
+    background: transparent;
+    border: 2px solid lightsteelblue;
+    border-radius: 10px;
+    justify-content: center;
+    color: lightskyblue;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 30px 40px;
+    height: 500px;
+
+}
+
+.blocoEsquerdo .tituloEsquerdo {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blocoEsquerdo * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background-color: #111111;
+}
+
+.blocoEsquerdo .countdown {
+    width: 28vw;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+}
+
+.blocoEsquerdo .box {
+    width: auto;
+    height: 24vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+.blocoEsquerdo .box:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.12);
+    height: 100%;
+    width: 50%;
+    left: 0;
+}
+
+.blocoEsquerdo span.num {
+    background-color: #202020;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 5em;
+}
+
+span.text {
+    font-size: 1.2em;
+    background-color: red;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+    .countdown {
+        width: 85vw;
+    }
+
+    .box {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .countdown {
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .box {
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .countdown {
+        gap: 15px;
+    }
+
+    .box {
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+
+    .span.text {
+        font-size: 1.5em;
+    }
+}
+
+.youTube {
+    width: 500px;
+    height: 400px;
+    border-color: crimson;
+    border-width: 10px;
+}
+
