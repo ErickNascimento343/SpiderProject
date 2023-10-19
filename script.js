@@ -25,7 +25,7 @@ function countdown() {
     clearInterval(i);
     document.querySelector(
       ".countdown"
-    ).innerHTML = `<h1>Countdown had expired!</h1>`;
+    ).innerHTML = `<h1>O JOGO JÁ ESTÁ LIBERADO </h1>`;
   }
   //If end date is not before today date
   else {
